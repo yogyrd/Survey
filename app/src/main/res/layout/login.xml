@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AlertDialog.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/logo_mmc"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/logo_mmc" />
+
+    <ImageView
+        android:id="@+id/logo_cdc"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/logo_cdc" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_cdc"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="Silahkan Login"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_login"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_username"
+        android:layout_below="@+id/et_username"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_password"
+        android:layout_below="@+id/et_password"
+        android:text="Login"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

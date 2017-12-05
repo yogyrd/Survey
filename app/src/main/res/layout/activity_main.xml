@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AlertDialog.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.kuliah.yogy.survey.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo_mmc"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/logo_mmc" />
+
+    <ImageView
+        android:id="@+id/logo_cdc"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/logo_cdc" />
+
+    <TextView
+        android:id="@+id/tv_ket"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="Silahkan anda memberikan penilaian terhadap pelayanan kami"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/logo_mmc"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:id="@+id/iv_senyum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_ket"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/nurse_senyum_kecil" />
+
+    <TextView
+        android:id="@+id/tv_senyum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_senyum"
+        android:fontFamily="casual"
+        android:text="Biasa Saja"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_gembira"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="80dp"
+        app:srcCompat="@drawable/nurse_gembira_kecil"
+        android:layout_below="@+id/tv_ket"
+        android:layout_toLeftOf="@id/iv_senyum"/>
+
+    <TextView
+        android:id="@+id/tv_gembira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv_gembira"
+        android:layout_below="@+id/iv_gembira"
+        android:layout_alignStart="@+id/iv_gembira"
+        android:fontFamily="casual"
+        android:text="Puas"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/logo_mmc" />
+
+    <ImageView
+        android:id="@+id/iv_sedih"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="80dp"
+        app:srcCompat="@drawable/nurse_sedih_kecil"
+        android:layout_below="@+id/tv_ket"
+        android:layout_toRightOf="@id/iv_senyum" />
+
+    <TextView
+        android:id="@+id/tv_menangis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Tidak Puas"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/iv_sedih"
+        android:layout_alignStart="@+id/iv_sedih" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circle"
+        />
+
+
+</RelativeLayout>
