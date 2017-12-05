@@ -44,8 +44,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_below="@+id/tv_ket"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/nurse_senyum_kecil" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/tv_senyum"
@@ -65,7 +64,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginRight="80dp"
-        app:srcCompat="@drawable/nurse_gembira_kecil"
         android:layout_below="@+id/tv_ket"
         android:layout_toLeftOf="@id/iv_senyum"/>
 
@@ -89,7 +87,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="80dp"
-        app:srcCompat="@drawable/nurse_sedih_kecil"
         android:layout_below="@+id/tv_ket"
         android:layout_toRightOf="@id/iv_senyum" />
 
@@ -104,7 +101,8 @@
         android:textStyle="bold"
         android:gravity="center"
         android:layout_below="@+id/iv_sedih"
-        android:layout_alignStart="@+id/iv_sedih" />
+        android:layout_alignStart="@+id/iv_sedih"
+        android:layout_alignEnd="@+id/iv_sedih"/>
 
     <Button
         android:id="@+id/btn_logout"
